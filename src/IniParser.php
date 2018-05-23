@@ -146,7 +146,7 @@ class IniParser
             $castedValue = [];
             foreach ($value as $k => $v)
             {
-                $castedValue[$k] = $this->itemValuetoStringRepresentation($v);
+                $castedValue[$k] = $this->castItemValueToProperType($v);
             }
         }
         elseif (is_numeric($value))
